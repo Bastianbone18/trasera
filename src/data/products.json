@@ -1,1178 +1,841 @@
 [
+{
+  "_id": "producto-1",
+  "categoria": "Smartphone",
+  "marca": "Apple",
+  "modelo": "SMT-977",
+  "precio": 1554.83,
+  "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+  "imagenes": ["SMT-977.jpg"],
+  "stock": 29,
+  "disponible": true,
+  "destacado": false
+},
+
   {
-    "categoria": "Tablet",
-    "marca": "Asus",
-    "modelo": "TAB-935",
-    "precio": 1237.12,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-935_0.jpg",
-      "https://example.com/images/tablet/tab-935_1.jpg",
-      "https://example.com/images/tablet/tab-935_2.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Conectividad Bluetooth",
-      "Resolución 4K",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "Microsoft",
-    "modelo": "ACC-288",
-    "precio": 192.89,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-288_0.jpg",
-      "https://example.com/images/accesorio/acc-288_1.jpg",
-      "https://example.com/images/accesorio/acc-288_2.jpg"
-    ],
-    "stock": 6,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Conectividad Bluetooth",
-      "Compatibilidad multiplataforma"
-    ]
-  },
-  {
-    "categoria": "Auriculares",
-    "marca": "Acer",
-    "modelo": "AUR-440",
-    "precio": 1166.25,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-440_0.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Resolución 4K",
-      "Conectividad Bluetooth",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Laptop",
-    "marca": "HP",
-    "modelo": "LAP-109",
-    "precio": 385.8,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/laptop/lap-109_0.jpg",
-      "https://example.com/images/laptop/lap-109_1.jpg"
-    ],
-    "stock": 6,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Pantalla OLED",
-      "Resolución 4K"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "Samsung",
-    "modelo": "ACC-947",
-    "precio": 316.1,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-947_0.jpg",
-      "https://example.com/images/accesorio/acc-947_1.jpg",
-      "https://example.com/images/accesorio/acc-947_2.jpg"
-    ],
-    "stock": 20,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Diseño ergonómico",
-      "Pantalla OLED",
-      "Conectividad Bluetooth",
-      "Compatibilidad multiplataforma"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "Samsung",
-    "modelo": "MOU-232",
-    "precio": 149.28,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-232_0.jpg",
-      "https://example.com/images/mouse/mou-232_1.jpg"
-    ],
-    "stock": 7,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Batería de larga duración",
-      "Alta definición",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Sony",
-    "modelo": "TAB-719",
-    "precio": 1347.88,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-719_0.jpg"
-    ],
-    "stock": 15,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Compatibilidad multiplataforma",
-      "Alta definición",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "HP",
-    "modelo": "TEC-934",
-    "precio": 141.07,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-934_0.jpg",
-      "https://example.com/images/teclado/tec-934_1.jpg",
-      "https://example.com/images/teclado/tec-934_2.jpg"
-    ],
-    "stock": 12,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Diseño ergonómico",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Nintendo",
-    "modelo": "CON-773",
-    "precio": 381.12,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-773_0.jpg"
-    ],
-    "stock": 12,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Alta definición",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Mouse",
+    "_id": "producto-2",
+    "categoria": "Smartwatch",
     "marca": "Apple",
-    "modelo": "MOU-831",
-    "precio": 1063.94,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "modelo": "TAB-461",
+    "precio": 1170.33,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
     "imagenes": [
-      "https://example.com/images/mouse/mou-831_0.jpg",
-      "https://example.com/images/mouse/mou-831_1.jpg",
-      "https://example.com/images/mouse/mou-831_2.jpg"
+      "/images/products/smartwatch-apple-tab-461.jpg"
     ],
-    "stock": 20,
+    "stock": 31,
     "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Alta definición",
-      "Pantalla OLED",
-      "Diseño ergonómico",
-      "Resolución 4K"
-    ]
+    "destacado": false
   },
   {
-    "categoria": "Consola",
-    "marca": "Samsung",
-    "modelo": "CON-123",
-    "precio": 515.89,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-123_0.jpg"
-    ],
-    "stock": 16,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Batería de larga duración",
-      "Procesador de última generación",
-      "Pantalla OLED"
-    ]
-  },
-  {
+    "_id": "producto-3",
     "categoria": "Laptop",
-    "marca": "Acer",
-    "modelo": "LAP-832",
-    "precio": 722.01,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "marca": "Dell",
+    "modelo": "MON-874",
+    "precio": 1577.54,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
     "imagenes": [
-      "https://example.com/images/laptop/lap-832_0.jpg",
-      "https://example.com/images/laptop/lap-832_1.jpg",
-      "https://example.com/images/laptop/lap-832_2.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Conectividad Bluetooth",
-      "Diseño ergonómico",
-      "Batería de larga duración",
-      "Resolución 4K"
-    ]
-  },
-  {
-    "categoria": "Auriculares",
-    "marca": "Logitech",
-    "modelo": "AUR-932",
-    "precio": 1374.1,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-932_0.jpg"
-    ],
-    "stock": 9,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Conectividad Bluetooth",
-      "Compatibilidad multiplataforma",
-      "Resolución 4K"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Razer",
-    "modelo": "CON-417",
-    "precio": 568.87,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-417_0.jpg"
-    ],
-    "stock": 6,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Conectividad Bluetooth",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "Acer",
-    "modelo": "ACC-924",
-    "precio": 193.8,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-924_0.jpg",
-      "https://example.com/images/accesorio/acc-924_1.jpg"
-    ],
-    "stock": 15,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Alta definición",
-      "Batería de larga duración",
-      "Conectividad Bluetooth",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Monitor",
-    "marca": "HP",
-    "modelo": "MON-533",
-    "precio": 351.28,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/monitor/mon-533_0.jpg",
-      "https://example.com/images/monitor/mon-533_1.jpg",
-      "https://example.com/images/monitor/mon-533_2.jpg"
-    ],
-    "stock": 15,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Compatibilidad multiplataforma",
-      "Resolución 4K",
-      "Alta definición"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Samsung",
-    "modelo": "TAB-558",
-    "precio": 1434.69,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-558_0.jpg"
-    ],
-    "stock": 8,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Resolución 4K",
-      "Conectividad Bluetooth",
-      "Procesador de última generación",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Monitor",
-    "marca": "Razer",
-    "modelo": "MON-165",
-    "precio": 1165.68,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/monitor/mon-165_0.jpg",
-      "https://example.com/images/monitor/mon-165_1.jpg"
-    ],
-    "stock": 20,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Diseño ergonómico",
-      "Alta definición",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "Acer",
-    "modelo": "MOU-658",
-    "precio": 1067.09,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-658_0.jpg"
-    ],
-    "stock": 18,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Conectividad Bluetooth",
-      "Diseño ergonómico",
-      "Compatibilidad multiplataforma"
-    ]
-  },
-  {
-    "categoria": "Laptop",
-    "marca": "Asus",
-    "modelo": "LAP-165",
-    "precio": 455.9,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/laptop/lap-165_0.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Diseño ergonómico",
-      "Compatibilidad multiplataforma"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Logitech",
-    "modelo": "TAB-215",
-    "precio": 562.36,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-215_0.jpg",
-      "https://example.com/images/tablet/tab-215_1.jpg",
-      "https://example.com/images/tablet/tab-215_2.jpg"
-    ],
-    "stock": 16,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Alta definición",
-      "Procesador de última generación",
-      "Compatibilidad multiplataforma",
-      "Pantalla OLED",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "HP",
-    "modelo": "MOU-665",
-    "precio": 243.6,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-665_0.jpg",
-      "https://example.com/images/mouse/mou-665_1.jpg",
-      "https://example.com/images/mouse/mou-665_2.jpg"
-    ],
-    "stock": 20,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Diseño ergonómico"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Acer",
-    "modelo": "TAB-577",
-    "precio": 1193.11,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-577_0.jpg"
-    ],
-    "stock": 13,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Batería de larga duración",
-      "Alta definición",
-      "Diseño ergonómico",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Sony",
-    "modelo": "CON-471",
-    "precio": 814.3,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-471_0.jpg",
-      "https://example.com/images/consola/con-471_1.jpg",
-      "https://example.com/images/consola/con-471_2.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Procesador de última generación",
-      "Batería de larga duración",
-      "Pantalla OLED",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "HP",
-    "modelo": "ACC-662",
-    "precio": 804.31,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-662_0.jpg",
-      "https://example.com/images/accesorio/acc-662_1.jpg"
-    ],
-    "stock": 8,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Microsoft",
-    "modelo": "TAB-188",
-    "precio": 1055.19,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-188_0.jpg",
-      "https://example.com/images/tablet/tab-188_1.jpg"
-    ],
-    "stock": 18,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Conectividad Bluetooth",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Asus",
-    "modelo": "TAB-748",
-    "precio": 1166.75,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-748_0.jpg",
-      "https://example.com/images/tablet/tab-748_1.jpg",
-      "https://example.com/images/tablet/tab-748_2.jpg"
-    ],
-    "stock": 18,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Alta definición",
-      "Compatibilidad multiplataforma",
-      "Diseño ergonómico"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Razer",
-    "modelo": "CON-336",
-    "precio": 160.75,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-336_0.jpg"
-    ],
-    "stock": 7,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Alta definición",
-      "Resolución 4K",
-      "Conectividad Bluetooth",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Apple",
-    "modelo": "TAB-566",
-    "precio": 1339.76,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-566_0.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Batería de larga duración",
-      "Alta definición",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Monitor",
-    "marca": "Nintendo",
-    "modelo": "MON-970",
-    "precio": 1012.18,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/monitor/mon-970_0.jpg",
-      "https://example.com/images/monitor/mon-970_1.jpg"
+      "/images/products/laptop-dell-mon-874.jpg"
     ],
     "stock": 5,
     "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Pantalla OLED",
-      "Diseño ergonómico",
-      "Resolución 4K"
-    ]
+    "destacado": true
   },
   {
-    "categoria": "Auriculares",
-    "marca": "Sony",
-    "modelo": "AUR-735",
-    "precio": 481.25,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-735_0.jpg",
-      "https://example.com/images/auriculares/aur-735_1.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Batería de larga duración",
-      "Alta definición",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "Razer",
-    "modelo": "TEC-562",
-    "precio": 1222.33,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-562_0.jpg",
-      "https://example.com/images/teclado/tec-562_1.jpg"
-    ],
-    "stock": 13,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Procesador de última generación",
-      "Resolución 4K"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "Microsoft",
-    "modelo": "ACC-589",
-    "precio": 1126.91,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-589_0.jpg",
-      "https://example.com/images/accesorio/acc-589_1.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Alta definición",
-      "Procesador de última generación",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "Apple",
-    "modelo": "TEC-264",
-    "precio": 1155.89,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-264_0.jpg"
-    ],
-    "stock": 13,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Pantalla OLED",
-      "Batería de larga duración",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Laptop",
-    "marca": "Apple",
-    "modelo": "LAP-100",
-    "precio": 1401.14,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/laptop/lap-100_0.jpg",
-      "https://example.com/images/laptop/lap-100_1.jpg"
-    ],
-    "stock": 12,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Diseño ergonómico",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Laptop",
-    "marca": "Nintendo",
-    "modelo": "LAP-183",
-    "precio": 1274.74,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/laptop/lap-183_0.jpg"
-    ],
-    "stock": 13,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Diseño ergonómico",
-      "Batería de larga duración",
-      "Procesador de última generación"
-    ]
-  },
-  {
+    "_id": "producto-4",
     "categoria": "Monitor",
-    "marca": "HP",
-    "modelo": "MON-461",
-    "precio": 1280.77,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "marca": "Dell",
+    "modelo": "LAP-832",
+    "precio": 1408.53,
+    "descripcion": "Equipado con las últimas innovaciones tecnológicas.",
     "imagenes": [
-      "https://example.com/images/monitor/mon-461_0.jpg",
-      "https://example.com/images/monitor/mon-461_1.jpg"
+      "/images/products/monitor-dell-lap-832.jpg"
+    ],
+    "stock": 26,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-5",
+    "categoria": "Smartwatch",
+    "marca": "Lenovo",
+    "modelo": "TAB-461",
+    "precio": 835.2,
+    "descripcion": "Equipado con las últimas innovaciones tecnológicas.",
+    "imagenes": [
+      "/images/products/smartwatch-lenovo-tab-461.jpg"
+    ],
+    "stock": 33,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-6",
+    "categoria": "Laptop",
+    "marca": "Asus",
+    "modelo": "LAP-832",
+    "precio": 323.0,
+    "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+    "imagenes": [
+      "/images/products/laptop-asus-lap-832.jpg"
+    ],
+    "stock": 39,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-7",
+    "categoria": "Tablet",
+    "marca": "Dell",
+    "modelo": "SMT-977",
+    "precio": 553.77,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/tablet-dell-smt-977.jpg"
+    ],
+    "stock": 35,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-8",
+    "categoria": "Smartphone",
+    "marca": "Xiaomi",
+    "modelo": "MON-874",
+    "precio": 1604.01,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartphone-xiaomi-mon-874.jpg"
+    ],
+    "stock": 34,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-9",
+    "categoria": "Monitor",
+    "marca": "Asus",
+    "modelo": "SWT-139",
+    "precio": 1461.24,
+    "descripcion": "Diseñado para durar y brindar una experiencia fluida.",
+    "imagenes": [
+      "/images/products/monitor-asus-swt-139.jpg"
+    ],
+    "stock": 4,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-10",
+    "categoria": "Smartwatch",
+    "marca": "Asus",
+    "modelo": "TAB-461",
+    "precio": 907.96,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/smartwatch-asus-tab-461.jpg"
+    ],
+    "stock": 39,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-11",
+    "categoria": "Laptop",
+    "marca": "Lenovo",
+    "modelo": "SWT-139",
+    "precio": 355.42,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/laptop-lenovo-swt-139.jpg"
+    ],
+    "stock": 47,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-12",
+    "categoria": "Smartphone",
+    "marca": "Dell",
+    "modelo": "SMT-977",
+    "precio": 1904.7,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/smartphone-dell-smt-977.jpg"
+    ],
+    "stock": 31,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-13",
+    "categoria": "Smartwatch",
+    "marca": "Lenovo",
+    "modelo": "LAP-832",
+    "precio": 103.71,
+    "descripcion": "Equipado con las últimas innovaciones tecnológicas.",
+    "imagenes": [
+      "/images/products/smartwatch-lenovo-lap-832.jpg"
+    ],
+    "stock": 43,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-14",
+    "categoria": "Laptop",
+    "marca": "Dell",
+    "modelo": "TAB-461",
+    "precio": 1804.49,
+    "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+    "imagenes": [
+      "/images/products/laptop-dell-tab-461.jpg"
+    ],
+    "stock": 2,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-15",
+    "categoria": "Laptop",
+    "marca": "Lenovo",
+    "modelo": "SWT-139",
+    "precio": 1508.76,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/laptop-lenovo-swt-139.jpg"
+    ],
+    "stock": 44,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-16",
+    "categoria": "Tablet",
+    "marca": "Samsung",
+    "modelo": "SMT-977",
+    "precio": 1649.61,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/tablet-samsung-smt-977.jpg"
+    ],
+    "stock": 13,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-17",
+    "categoria": "Laptop",
+    "marca": "Dell",
+    "modelo": "SMT-977",
+    "precio": 1913.63,
+    "descripcion": "Pantalla de alta definición con gran precisión de color.",
+    "imagenes": [
+      "/images/products/laptop-dell-smt-977.jpg"
+    ],
+    "stock": 33,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-18",
+    "categoria": "Monitor",
+    "marca": "Asus",
+    "modelo": "LAP-832",
+    "precio": 1159.91,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/monitor-asus-lap-832.jpg"
     ],
     "stock": 16,
     "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Procesador de última generación",
-      "Batería de larga duración"
-    ]
+    "destacado": true
   },
   {
-    "categoria": "Monitor",
-    "marca": "Asus",
-    "modelo": "MON-465",
-    "precio": 448.89,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "_id": "producto-19",
+    "categoria": "Tablet",
+    "marca": "Dell",
+    "modelo": "MON-874",
+    "precio": 1571.92,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
     "imagenes": [
-      "https://example.com/images/monitor/mon-465_0.jpg",
-      "https://example.com/images/monitor/mon-465_1.jpg",
-      "https://example.com/images/monitor/mon-465_2.jpg"
+      "/images/products/tablet-dell-mon-874.jpg"
+    ],
+    "stock": 12,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-20",
+    "categoria": "Smartwatch",
+    "marca": "Asus",
+    "modelo": "TAB-461",
+    "precio": 1662.32,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartwatch-asus-tab-461.jpg"
+    ],
+    "stock": 26,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-21",
+    "categoria": "Monitor",
+    "marca": "HP",
+    "modelo": "TAB-461",
+    "precio": 433.61,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/monitor-hp-tab-461.jpg"
+    ],
+    "stock": 41,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-22",
+    "categoria": "Laptop",
+    "marca": "Xiaomi",
+    "modelo": "MON-874",
+    "precio": 358.76,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/laptop-xiaomi-mon-874.jpg"
+    ],
+    "stock": 21,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-23",
+    "categoria": "Tablet",
+    "marca": "Asus",
+    "modelo": "MON-874",
+    "precio": 1260.66,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/tablet-asus-mon-874.jpg"
+    ],
+    "stock": 22,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-24",
+    "categoria": "Tablet",
+    "marca": "Lenovo",
+    "modelo": "LAP-832",
+    "precio": 1556.78,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/tablet-lenovo-lap-832.jpg"
+    ],
+    "stock": 35,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-25",
+    "categoria": "Smartwatch",
+    "marca": "Lenovo",
+    "modelo": "TAB-461",
+    "precio": 358.81,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartwatch-lenovo-tab-461.jpg"
+    ],
+    "stock": 2,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-26",
+    "categoria": "Tablet",
+    "marca": "Asus",
+    "modelo": "SWT-139",
+    "precio": 1320.23,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/tablet-asus-swt-139.jpg"
+    ],
+    "stock": 48,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-27",
+    "categoria": "Smartwatch",
+    "marca": "Asus",
+    "modelo": "SWT-139",
+    "precio": 1959.39,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/smartwatch-asus-swt-139.jpg"
+    ],
+    "stock": 2,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-28",
+    "categoria": "Smartphone",
+    "marca": "Lenovo",
+    "modelo": "MON-874",
+    "precio": 455.56,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/smartphone-lenovo-mon-874.jpg"
+    ],
+    "stock": 30,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-29",
+    "categoria": "Tablet",
+    "marca": "HP",
+    "modelo": "LAP-832",
+    "precio": 1493.37,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/tablet-hp-lap-832.jpg"
+    ],
+    "stock": 22,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-30",
+    "categoria": "Tablet",
+    "marca": "HP",
+    "modelo": "LAP-832",
+    "precio": 1645.11,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/tablet-hp-lap-832.jpg"
+    ],
+    "stock": 33,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-31",
+    "categoria": "Laptop",
+    "marca": "Xiaomi",
+    "modelo": "SMT-977",
+    "precio": 1669.24,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/laptop-xiaomi-smt-977.jpg"
     ],
     "stock": 9,
     "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Conectividad Bluetooth",
-      "Alta definición"
-    ]
+    "destacado": false
   },
   {
-    "categoria": "Auriculares",
-    "marca": "HP",
-    "modelo": "AUR-677",
-    "precio": 213.87,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "_id": "producto-32",
+    "categoria": "Tablet",
+    "marca": "Asus",
+    "modelo": "SMT-977",
+    "precio": 325.28,
+    "descripcion": "Pantalla de alta definición con gran precisión de color.",
     "imagenes": [
-      "https://example.com/images/auriculares/aur-677_0.jpg"
+      "/images/products/tablet-asus-smt-977.jpg"
+    ],
+    "stock": 50,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-33",
+    "categoria": "Tablet",
+    "marca": "Asus",
+    "modelo": "LAP-832",
+    "precio": 1132.56,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/tablet-asus-lap-832.jpg"
+    ],
+    "stock": 1,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-34",
+    "categoria": "Tablet",
+    "marca": "Dell",
+    "modelo": "TAB-461",
+    "precio": 1066.72,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/tablet-dell-tab-461.jpg"
+    ],
+    "stock": 48,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-35",
+    "categoria": "Monitor",
+    "marca": "HP",
+    "modelo": "TAB-461",
+    "precio": 160.35,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/monitor-hp-tab-461.jpg"
+    ],
+    "stock": 41,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-36",
+    "categoria": "Laptop",
+    "marca": "Dell",
+    "modelo": "SWT-139",
+    "precio": 1654.89,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/laptop-dell-swt-139.jpg"
+    ],
+    "stock": 15,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-37",
+    "categoria": "Laptop",
+    "marca": "Samsung",
+    "modelo": "SWT-139",
+    "precio": 1829.59,
+    "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+    "imagenes": [
+      "/images/products/laptop-samsung-swt-139.jpg"
+    ],
+    "stock": 5,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-38",
+    "categoria": "Monitor",
+    "marca": "Lenovo",
+    "modelo": "TAB-461",
+    "precio": 704.01,
+    "descripcion": "Diseñado para durar y brindar una experiencia fluida.",
+    "imagenes": [
+      "/images/products/monitor-lenovo-tab-461.jpg"
+    ],
+    "stock": 44,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-39",
+    "categoria": "Smartphone",
+    "marca": "Xiaomi",
+    "modelo": "MON-874",
+    "precio": 921.23,
+    "descripcion": "Dispositivo potente y versátil con gran capacidad de respuesta.",
+    "imagenes": [
+      "/images/products/smartphone-xiaomi-mon-874.jpg"
+    ],
+    "stock": 46,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-40",
+    "categoria": "Smartwatch",
+    "marca": "Samsung",
+    "modelo": "LAP-832",
+    "precio": 272.89,
+    "descripcion": "Pantalla de alta definición con gran precisión de color.",
+    "imagenes": [
+      "/images/products/smartwatch-samsung-lap-832.jpg"
+    ],
+    "stock": 27,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-41",
+    "categoria": "Laptop",
+    "marca": "Apple",
+    "modelo": "SWT-139",
+    "precio": 178.07,
+    "descripcion": "Diseñado para durar y brindar una experiencia fluida.",
+    "imagenes": [
+      "/images/products/laptop-apple-swt-139.jpg"
+    ],
+    "stock": 21,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-42",
+    "categoria": "Smartphone",
+    "marca": "Xiaomi",
+    "modelo": "SWT-139",
+    "precio": 1892.77,
+    "descripcion": "Dispositivo potente y versátil con gran capacidad de respuesta.",
+    "imagenes": [
+      "/images/products/smartphone-xiaomi-swt-139.jpg"
+    ],
+    "stock": 44,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-43",
+    "categoria": "Smartphone",
+    "marca": "HP",
+    "modelo": "SWT-139",
+    "precio": 199.14,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartphone-hp-swt-139.jpg"
+    ],
+    "stock": 33,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-44",
+    "categoria": "Laptop",
+    "marca": "HP",
+    "modelo": "MON-874",
+    "precio": 1102.46,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
+    "imagenes": [
+      "/images/products/laptop-hp-mon-874.jpg"
+    ],
+    "stock": 17,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-45",
+    "categoria": "Smartwatch",
+    "marca": "Samsung",
+    "modelo": "TAB-461",
+    "precio": 372.45,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartwatch-samsung-tab-461.jpg"
+    ],
+    "stock": 26,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-46",
+    "categoria": "Tablet",
+    "marca": "HP",
+    "modelo": "TAB-461",
+    "precio": 168.14,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/tablet-hp-tab-461.jpg"
+    ],
+    "stock": 1,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-47",
+    "categoria": "Monitor",
+    "marca": "Xiaomi",
+    "modelo": "LAP-832",
+    "precio": 114.0,
+    "descripcion": "Dispositivo potente y versátil con gran capacidad de respuesta.",
+    "imagenes": [
+      "/images/products/monitor-xiaomi-lap-832.jpg"
+    ],
+    "stock": 34,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-48",
+    "categoria": "Tablet",
+    "marca": "Samsung",
+    "modelo": "TAB-461",
+    "precio": 1634.41,
+    "descripcion": "Diseñado para durar y brindar una experiencia fluida.",
+    "imagenes": [
+      "/images/products/tablet-samsung-tab-461.jpg"
+    ],
+    "stock": 8,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-49",
+    "categoria": "Tablet",
+    "marca": "Samsung",
+    "modelo": "LAP-832",
+    "precio": 1595.29,
+    "descripcion": "Ideal para entretenimiento, trabajo y estudio diario.",
+    "imagenes": [
+      "/images/products/tablet-samsung-lap-832.jpg"
     ],
     "stock": 14,
     "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Procesador de última generación",
-      "Alta definición"
-    ]
+    "destacado": true
   },
   {
-    "categoria": "Accesorio",
-    "marca": "Samsung",
-    "modelo": "ACC-224",
-    "precio": 68.08,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-224_0.jpg",
-      "https://example.com/images/accesorio/acc-224_1.jpg"
-    ],
-    "stock": 5,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Pantalla OLED",
-      "Alta definición",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Logitech",
-    "modelo": "TAB-825",
-    "precio": 1014.37,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-825_0.jpg"
-    ],
-    "stock": 7,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Pantalla OLED",
-      "Batería de larga duración",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Logitech",
-    "modelo": "CON-561",
-    "precio": 717.13,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-561_0.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Alta definición",
-      "Procesador de última generación",
-      "Diseño ergonómico",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "Acer",
-    "modelo": "MOU-396",
-    "precio": 598.72,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-396_0.jpg",
-      "https://example.com/images/mouse/mou-396_1.jpg",
-      "https://example.com/images/mouse/mou-396_2.jpg"
-    ],
-    "stock": 20,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Resolución 4K",
-      "Conectividad Bluetooth",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    
-    "categoria": "Monitor",
-    "marca": "HP",
-    "modelo": "MON-815",
-    "precio": 1258.36,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/monitor/mon-815_0.jpg",
-      "https://example.com/images/monitor/mon-815_1.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Conectividad Bluetooth",
-      "Resolución 4K"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Logitech",
-    "modelo": "TAB-470",
-    "precio": 1257.08,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-470_0.jpg",
-      "https://example.com/images/tablet/tab-470_1.jpg"
-    ],
-    "stock": 11,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Alta definición",
-      "Compatibilidad multiplataforma",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Auriculares",
-    "marca": "Acer",
-    "modelo": "AUR-913",
-    "precio": 367.98,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-913_0.jpg",
-      "https://example.com/images/auriculares/aur-913_1.jpg"
-    ],
-    "stock": 12,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Compatibilidad multiplataforma",
-      "Resolución 4K",
-      "Diseño ergonómico",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Auriculares",
-    "marca": "Apple",
-    "modelo": "AUR-656",
-    "precio": 1246.78,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-656_0.jpg",
-      "https://example.com/images/auriculares/aur-656_1.jpg",
-      "https://example.com/images/auriculares/aur-656_2.jpg"
-    ],
-    "stock": 18,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Alta definición",
-      "Diseño ergonómico"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Asus",
-    "modelo": "TAB-942",
-    "precio": 894.47,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-942_0.jpg",
-      "https://example.com/images/tablet/tab-942_1.jpg"
-    ],
-    "stock": 19,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Resolución 4K",
-      "Alta definición",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "HP",
-    "modelo": "TEC-678",
-    "precio": 1146.0,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-678_0.jpg"
-    ],
-    "stock": 17,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Diseño ergonómico"
-    ]
-  },
-  {
-    "categoria": "Monitor",
-    "marca": "Acer",
-    "modelo": "MON-882",
-    "precio": 1416.3,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/monitor/mon-882_0.jpg",
-      "https://example.com/images/monitor/mon-882_1.jpg",
-      "https://example.com/images/monitor/mon-882_2.jpg"
-    ],
-    "stock": 8,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Diseño ergonómico",
-      "Resolución 4K",
-      "Compatibilidad multiplataforma",
-      "Pantalla OLED",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Sony",
-    "modelo": "CON-398",
-    "precio": 770.33,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-398_0.jpg",
-      "https://example.com/images/consola/con-398_1.jpg",
-      "https://example.com/images/consola/con-398_2.jpg"
-    ],
-    "stock": 7,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Alta definición",
-      "Diseño ergonómico",
-      "Conectividad Bluetooth",
-      "Resolución 4K",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Auriculares",
-    "marca": "Microsoft",
-    "modelo": "AUR-833",
-    "precio": 1108.28,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/auriculares/aur-833_0.jpg"
-    ],
-    "stock": 18,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Procesador de última generación",
-      "Diseño ergonómico",
-      "Batería de larga duración"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "Microsoft",
-    "modelo": "MOU-369",
-    "precio": 1455.16,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-369_0.jpg",
-      "https://example.com/images/mouse/mou-369_1.jpg"
-    ],
-    "stock": 5,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Batería de larga duración",
-      "Resolución 4K",
-      "Procesador de última generación",
-      "Pantalla OLED"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "Razer",
-    "modelo": "TEC-731",
-    "precio": 1342.17,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-731_0.jpg"
-    ],
-    "stock": 13,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Batería de larga duración",
-      "Pantalla OLED",
-      "Diseño ergonómico"
-    ]
-  },
-  {
-    "categoria": "Tablet",
-    "marca": "Acer",
-    "modelo": "TAB-126",
-    "precio": 305.36,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/tablet/tab-126_0.jpg",
-      "https://example.com/images/tablet/tab-126_1.jpg",
-      "https://example.com/images/tablet/tab-126_2.jpg"
-    ],
-    "stock": 9,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Compatibilidad multiplataforma",
-      "Pantalla OLED",
-      "Procesador de última generación",
-      "Batería de larga duración",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
-    "categoria": "Accesorio",
-    "marca": "Apple",
-    "modelo": "ACC-510",
-    "precio": 281.12,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/accesorio/acc-510_0.jpg",
-      "https://example.com/images/accesorio/acc-510_1.jpg"
-    ],
-    "stock": 10,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Conectividad Bluetooth",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Consola",
-    "marca": "Samsung",
-    "modelo": "CON-175",
-    "precio": 1285.67,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/consola/con-175_0.jpg"
-    ],
-    "stock": 9,
-    "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Procesador de última generación"
-    ]
-  },
-  {
-    "categoria": "Mouse",
-    "marca": "Acer",
-    "modelo": "MOU-204",
-    "precio": 1189.52,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/mouse/mou-204_0.jpg"
-    ],
-    "stock": 15,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Conectividad Bluetooth",
-      "Compatibilidad multiplataforma"
-    ]
-  },
-  {
-    "categoria": "Teclado",
-    "marca": "Nintendo",
-    "modelo": "TEC-950",
-    "precio": 1068.74,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
-    "imagenes": [
-      "https://example.com/images/teclado/tec-950_0.jpg",
-      "https://example.com/images/teclado/tec-950_1.jpg"
-    ],
-    "stock": 5,
-    "disponible": true,
-    "destacado": false,
-    "caracteristicas": [
-      "Resolución 4K",
-      "Batería de larga duración",
-      "Diseño ergonómico",
-      "Alta definición",
-      "Conectividad Bluetooth"
-    ]
-  },
-  {
+    "_id": "producto-50",
     "categoria": "Laptop",
-    "marca": "Acer",
-    "modelo": "LAP-738",
-    "precio": 971.12,
-    "descripcion": "Producto tecnológico de alta calidad con excelentes características y diseño moderno.",
+    "marca": "Apple",
+    "modelo": "SWT-139",
+    "precio": 1934.78,
+    "descripcion": "Perfecto para usuarios exigentes que buscan calidad.",
     "imagenes": [
-      "https://example.com/images/laptop/lap-738_0.jpg",
-      "https://example.com/images/laptop/lap-738_1.jpg",
-      "https://example.com/images/laptop/lap-738_2.jpg"
+      "/images/products/laptop-apple-swt-139.jpg"
+    ],
+    "stock": 4,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-51",
+    "categoria": "Smartphone",
+    "marca": "Xiaomi",
+    "modelo": "LAP-832",
+    "precio": 322.87,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/smartphone-xiaomi-lap-832.jpg"
+    ],
+    "stock": 44,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-52",
+    "categoria": "Tablet",
+    "marca": "Apple",
+    "modelo": "TAB-461",
+    "precio": 721.11,
+    "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+    "imagenes": [
+      "/images/products/tablet-apple-tab-461.jpg"
+    ],
+    "stock": 46,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-53",
+    "categoria": "Tablet",
+    "marca": "Dell",
+    "modelo": "SWT-139",
+    "precio": 1872.97,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/tablet-dell-swt-139.jpg"
+    ],
+    "stock": 50,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-54",
+    "categoria": "Laptop",
+    "marca": "Xiaomi",
+    "modelo": "MON-874",
+    "precio": 1564.41,
+    "descripcion": "Equipado con las últimas innovaciones tecnológicas.",
+    "imagenes": [
+      "/images/products/laptop-xiaomi-mon-874.jpg"
+    ],
+    "stock": 16,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-55",
+    "categoria": "Smartwatch",
+    "marca": "HP",
+    "modelo": "SWT-139",
+    "precio": 1200.76,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/smartwatch-hp-swt-139.jpg"
+    ],
+    "stock": 2,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-56",
+    "categoria": "Tablet",
+    "marca": "Samsung",
+    "modelo": "SMT-977",
+    "precio": 344.1,
+    "descripcion": "Diseño moderno y elegante con funcionalidades avanzadas.",
+    "imagenes": [
+      "/images/products/tablet-samsung-smt-977.jpg"
     ],
     "stock": 7,
     "disponible": true,
-    "destacado": true,
-    "caracteristicas": [
-      "Pantalla OLED",
-      "Resolución 4K",
-      "Compatibilidad multiplataforma"
-    ]
+    "destacado": false
+  },
+  {
+    "_id": "producto-57",
+    "categoria": "Laptop",
+    "marca": "Xiaomi",
+    "modelo": "LAP-832",
+    "precio": 760.46,
+    "descripcion": "Rendimiento óptimo con larga duración de batería.",
+    "imagenes": [
+      "/images/products/laptop-xiaomi-lap-832.jpg"
+    ],
+    "stock": 45,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-58",
+    "categoria": "Laptop",
+    "marca": "Xiaomi",
+    "modelo": "TAB-461",
+    "precio": 1222.97,
+    "descripcion": "Equipado con las últimas innovaciones tecnológicas.",
+    "imagenes": [
+      "/images/products/laptop-xiaomi-tab-461.jpg"
+    ],
+    "stock": 45,
+    "disponible": true,
+    "destacado": true
+  },
+  {
+    "_id": "producto-59",
+    "categoria": "Laptop",
+    "marca": "Apple",
+    "modelo": "LAP-832",
+    "precio": 1906.93,
+    "descripcion": "Ligero, portátil y con excelente conectividad.",
+    "imagenes": [
+      "/images/products/laptop-apple-lap-832.jpg"
+    ],
+    "stock": 7,
+    "disponible": true,
+    "destacado": false
+  },
+  {
+    "_id": "producto-60",
+    "categoria": "Smartphone",
+    "marca": "Xiaomi",
+    "modelo": "SWT-139",
+    "precio": 826.09,
+    "descripcion": "Mejora tu productividad con este equipo eficiente.",
+    "imagenes": [
+      "/images/products/smartphone-xiaomi-swt-139.jpg"
+    ],
+    "stock": 4,
+    "disponible": true,
+    "destacado": true
   }
 ]

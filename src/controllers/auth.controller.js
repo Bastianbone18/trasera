@@ -29,7 +29,7 @@ const register = async (req, res) => {
       name,
       email,
       password: hashedPassword,
-      role,
+      role: role || 'user', // Usar el rol por defecto si no se proporciona
       profileImage
     });
 
@@ -80,32 +80,33 @@ const updateProfileImage = async (req, res) => {
 
 // Iniciar sesion
 const login = async (req, res) => {
-  try{
+  try {
     const { email, password } = req.body;
-    const user = await user.findOne({email});
+    const user = await User.findOne({ email }); // Corregido: user → User
 
     // Verificar si el usuario existe
-    if(!user){
-      return res.status(400).json({ message: "Usuario no encontrado"});
+    if (!user) {
+      return res.status(400).json({ message: "Usuario no encontrado" });
     }
 
     // Verificar la contraseña
     const isMatch = await bcrypt.compare(password, user.password);
-    if(!isMatch){
-      return res.status(400).json({ message: "Contraseña incorrecta"});
+    if (!isMatch) {
+      return res.status(400).json({ message: "Contraseña incorrecta" });
     }
 
-    //Agregar el rol al token
-    const token = jwt.sign({
-      id: user._id,
-      name: user.name,
-      role: user.role,
+    // Agregar el rol al token
+    const token = jwt.sign(
+      {
+        id: user._id,
+        name: user.name,
+        role: user.role,
       },
       process.env.JWT_SECRET,
-     { expiresIn: "1h" }
+      { expiresIn: "1h" }
     );
 
-    // devolver el token y los datos del usuario
+    // Devolver el token y los datos del usuario
     res.json({
       token,
       user: {
@@ -115,22 +116,14 @@ const login = async (req, res) => {
         role: user.role
       }
     });
-
-  }catch (error){
-    console.error(" Error en login: ", error);
-    res.status(500).json({ message: "Error al inicar sesion"});
+  } catch (error) {
+    console.error("Error en login: ", error);
+    res.status(500).json({ message: "Error al iniciar sesión" });
   }
-}
+};
 
 module.exports = { 
   register, 
   login,
   updateProfileImage 
 };
-
-
-
-
-
-
-

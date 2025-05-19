@@ -61,7 +61,10 @@ mongoose.connect(process.env.MONGO_URI, {
 app.use("/uploads/products", express.static(path.join(__dirname, "uploads/products")));
 
 // Servir imágenes de perfil de usuarios
-app.use("/uploads/users", express.static(path.join(__dirname, "uploads/users")));
+app.use("/images/products", express.static(path.join(__dirname, "uploads/products")));
+
+
+
 
 // ==============================================
 // 4. DOCUMENTACIÓN API (SWAGGER)

@@ -17,89 +17,86 @@ const checkRole = require("../middlewares/roleMiddleware");
  * @swagger
  * tags:
  *   name: Productos
- *   description: Gestión de vehículos en el sistema
+ *   description: Gestión de productos tecnológicos en el sistema
  */
 
 /**
  * @swagger
  * components:
  *   schemas:
- *     Vehiculo:
+ *     TechProduct:
  *       type: object
  *       required:
+ *         - categoria
  *         - marca
  *         - modelo
- *         - año
  *         - precio
- *         - color
- *         - kilometraje
- *         - tipo
- *         - transmision
- *         - imagenes
  *         - descripcion
+ *         - imagenes
+ *         - stock
+ *         - disponible
+ *         - destacado
  *       properties:
+ *         categoria:
+ *           type: string
+ *           example: "Electrónica"
  *         marca:
  *           type: string
- *           example: "Toyota"
+ *           example: "Apple"
  *         modelo:
  *           type: string
- *           example: "Corolla"
- *         año:
- *           type: integer
- *           example: 2023
+ *           example: "iPhone 14"
  *         precio:
  *           type: number
- *           example: 25000
- *         color:
+ *           example: 999.99
+ *         descripcion:
  *           type: string
- *           example: "Blanco"
- *         kilometraje:
- *           type: number
- *           example: 0
- *         tipo:
- *           type: string
- *           enum: [Sedán, SUV, Pickup, Deportivo, Hatchback, Eléctrico]
- *           example: "Sedán"
- *         transmision:
- *           type: string
- *           enum: [Automática, Manual]
- *           example: "Automática"
+ *           example: "Smartphone de última generación"
  *         imagenes:
  *           type: array
  *           items:
  *             type: string
- *           example: ["https://example.com/auto1.jpg"]
- *         descripcion:
- *           type: string
- *           example: "Vehículo en excelente estado"
+ *           example: ["https://example.com/iphone14.jpg"]
+ *         stock:
+ *           type: integer
+ *           example: 100
  *         disponible:
  *           type: boolean
  *           default: true
- *   securitySchemes:
- *     bearerAuth:
- *       type: http
- *       scheme: bearer
- *       bearerFormat: JWT
+ *         destacado:
+ *           type: boolean
+ *           default: false
+ *         caracteristicas:
+ *           type: object
+ *           properties:
+ *             pantalla:
+ *               type: string
+ *               example: "6.1 pulgadas"
+ *             procesador:
+ *               type: string
+ *               example: "A15 Bionic"
+ *             camara:
+ *               type: string
+ *               example: "12MP"
  */
 
 /**
  * @swagger
  * /products:
  *   get:
- *     summary: Obtener todos los vehículos con filtros opcionales
+ *     summary: Obtener todos los productos con filtros opcionales
  *     tags: [Productos]
  *     parameters:
  *       - in: query
  *         name: marca
  *         schema:
  *           type: string
- *         description: Filtrar por marca (ej. Toyota)
+ *         description: Filtrar por marca (ej. Apple)
  *       - in: query
- *         name: tipo
+ *         name: categoria
  *         schema:
  *           type: string
- *           enum: [Sedán, SUV, Pickup, Deportivo, Hatchback, Eléctrico]
- *         description: Filtrar por tipo de vehículo
+ *         description: Filtrar por categoría de producto
  *       - in: query
  *         name: minPrice
  *         schema:
@@ -112,13 +109,13 @@ const checkRole = require("../middlewares/roleMiddleware");
  *         description: Precio máximo
  *     responses:
  *       200:
- *         description: Lista de vehículos
+ *         description: Lista de productos
  *         content:
  *           application/json:
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/Vehiculo'
+ *                 $ref: '#/components/schemas/TechProduct'
  *       500:
  *         description: Error del servidor
  */
@@ -126,85 +123,9 @@ router.get("/", getProducts);
 
 /**
  * @swagger
- * /products/search/advanced:
- *   get:
- *     summary: Búsqueda avanzada de vehículos
- *     tags: [Productos]
- *     parameters:
- *       - in: query
- *         name: marca
- *         schema:
- *           type: string
- *         description: Marca del vehículo
- *       - in: query
- *         name: modelo
- *         schema:
- *           type: string
- *         description: Modelo del vehículo
- *       - in: query
- *         name: minYear
- *         schema:
- *           type: integer
- *         description: Año mínimo
- *       - in: query
- *         name: maxYear
- *         schema:
- *           type: integer
- *         description: Año máximo
- *       - in: query
- *         name: minPrice
- *         schema:
- *           type: number
- *         description: Precio mínimo
- *       - in: query
- *         name: maxPrice
- *         schema:
- *           type: number
- *         description: Precio máximo
- *       - in: query
- *         name: tipo
- *         schema:
- *           type: string
- *           enum: [Sedán, SUV, Pickup, Deportivo, Hatchback, Eléctrico]
- *         description: Tipo de vehículo
- *       - in: query
- *         name: page
- *         schema:
- *           type: integer
- *           default: 1
- *         description: Número de página
- *       - in: query
- *         name: limit
- *         schema:
- *           type: integer
- *           default: 10
- *         description: Límite de resultados por página
- *     responses:
- *       200:
- *         description: Resultados de búsqueda
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 total:
- *                   type: integer
- *                 page:
- *                   type: integer
- *                 totalPages:
- *                   type: integer
- *                 products:
- *                   type: array
- *                   items:
- *                     $ref: '#/components/schemas/Vehiculo'
- */
-router.get("/search/advanced", advancedSearch);
-
-/**
- * @swagger
  * /products/{id}:
  *   get:
- *     summary: Obtener un vehículo por ID
+ *     summary: Obtener un producto por ID
  *     tags: [Productos]
  *     parameters:
  *       - in: path
@@ -212,31 +133,26 @@ router.get("/search/advanced", advancedSearch);
  *         required: true
  *         schema:
  *           type: string
- *         description: ID del vehículo
+ *         description: ID del producto
  *     responses:
  *       200:
- *         description: Detalles del vehículo
+ *         description: Detalles del producto
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Vehiculo'
+ *               $ref: '#/components/schemas/TechProduct'
  *       404:
- *         description: Vehículo no encontrado
+ *         description: Producto no encontrado
  *       500:
  *         description: Error del servidor
  */
-router.get(
-  "/:id",
-  [check("id", "El ID debe ser válido").isMongoId()],
-  validateFields,
-  getProductById
-);
+router.get("/:id", getProductById);
 
 /**
  * @swagger
  * /products:
  *   post:
- *     summary: Crear un nuevo vehículo (solo admin)
+ *     summary: Crear un nuevo producto (solo admin)
  *     tags: [Productos]
  *     security:
  *       - bearerAuth: []
@@ -245,14 +161,14 @@ router.get(
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Vehiculo'
+ *             $ref: '#/components/schemas/TechProduct'
  *     responses:
  *       201:
- *         description: Vehículo creado exitosamente
+ *         description: Producto creado exitosamente
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Vehiculo'
+ *               $ref: '#/components/schemas/TechProduct'
  *       400:
  *         description: Datos inválidos
  *       401:
@@ -267,16 +183,16 @@ router.post(
   authenticateToken,
   checkRole(["admin"]),
   [
+    check("categoria", "La categoría es obligatoria").not().isEmpty(),
     check("marca", "La marca es obligatoria").not().isEmpty(),
     check("modelo", "El modelo es obligatorio").not().isEmpty(),
-    check("año", "El año debe ser un número válido").isInt({ min: 1900, max: new Date().getFullYear() + 1 }),
     check("precio", "El precio debe ser un número válido").isFloat({ gt: 0 }),
-    check("color", "El color es obligatorio").not().isEmpty(),
-    check("kilometraje", "El kilometraje debe ser un número válido").isFloat({ min: 0 }),
-    check("tipo", "Tipo de vehículo inválido").isIn(["Sedán", "SUV", "Pickup", "Deportivo", "Hatchback", "Eléctrico"]),
-    check("transmision", "Transmisión inválida").isIn(["Automática", "Manual"]),
-    check("imagenes", "Debe proporcionar al menos una imagen").isArray({ min: 1 }),
     check("descripcion", "La descripción es obligatoria").not().isEmpty(),
+    check("imagenes", "Debe proporcionar al menos una imagen").isArray({ min: 1 }),
+    check("stock", "El stock debe ser un número válido").isInt({ min: 0 }),
+    check("disponible", "El campo 'disponible' debe ser un valor booleano").isBoolean(),
+    check("destacado", "El campo 'destacado' debe ser un valor booleano").isBoolean(),
+    check("caracteristicas", "Las características del producto son obligatorias").isObject(),
     validateFields
   ],
   createProduct
@@ -286,7 +202,7 @@ router.post(
  * @swagger
  * /products/{id}:
  *   put:
- *     summary: Actualizar un vehículo (solo admin)
+ *     summary: Actualizar un producto (solo admin)
  *     tags: [Productos]
  *     security:
  *       - bearerAuth: []
@@ -296,20 +212,20 @@ router.post(
  *         required: true
  *         schema:
  *           type: string
- *         description: ID del vehículo
+ *         description: ID del producto
  *     requestBody:
  *       required: true
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Vehiculo'
+ *             $ref: '#/components/schemas/TechProduct'
  *     responses:
  *       200:
- *         description: Vehículo actualizado
+ *         description: Producto actualizado
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Vehiculo'
+ *               $ref: '#/components/schemas/TechProduct'
  *       400:
  *         description: Datos inválidos
  *       401:
@@ -317,7 +233,7 @@ router.post(
  *       403:
  *         description: Acceso denegado - Solo administradores
  *       404:
- *         description: Vehículo no encontrado
+ *         description: Producto no encontrado
  *       500:
  *         description: Error del servidor
  */
@@ -336,7 +252,7 @@ router.put(
  * @swagger
  * /products/{id}:
  *   delete:
- *     summary: Eliminar un vehículo (solo admin)
+ *     summary: Eliminar un producto (solo admin)
  *     tags: [Productos]
  *     security:
  *       - bearerAuth: []
@@ -346,16 +262,16 @@ router.put(
  *         required: true
  *         schema:
  *           type: string
- *         description: ID del vehículo
+ *         description: ID del producto
  *     responses:
  *       200:
- *         description: Vehículo eliminado
+ *         description: Producto eliminado
  *       401:
  *         description: No autorizado
  *       403:
  *         description: Acceso denegado - Solo administradores
  *       404:
- *         description: Vehículo no encontrado
+ *         description: Producto no encontrado
  *       500:
  *         description: Error del servidor
  */
